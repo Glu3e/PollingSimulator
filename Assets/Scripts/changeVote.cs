@@ -6,7 +6,7 @@ public class changeVote : MonoBehaviour
     public GameObject[] voters;
     public Color[] votes;
     public GameObject square;
-    GridGenerator grid = new GridGenerator();
+	GridGenerator grid = new GridGenerator();
     public int left, right, topLeft, top, topRight, bottomLeft, bottom, bottomRight;
     public int loc;
     public int red = 0, blue = 0, yellow = 0, green = 0, gray = 0;
@@ -14,6 +14,7 @@ public class changeVote : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         square = this.gameObject;
         votes = new Color[8];
         voters = GameObject.FindGameObjectsWithTag("Voter");
