@@ -5,6 +5,7 @@ using System.IO;
 
 public class GridGenerator : MonoBehaviour {
 	public GameObject prefab;
+
 	public float gridX = 5f;
 	public float gridY = 5f;
 	public float spacing = 2f;
@@ -15,6 +16,7 @@ public class GridGenerator : MonoBehaviour {
 				Vector2 pos = new Vector2(x, y) * spacing;
 				Instantiate(prefab, pos, Quaternion.identity);
 				RNDColorGenerator();
+				Debug.Log(pos);
 			}
 		}
 	}
